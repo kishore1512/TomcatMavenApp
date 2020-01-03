@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+        java: corretto8
+    commands:
+      - yum update -y
+  pre_build:
+    commands:
+  build:
+    commands:
+      - java -version
+artifacts:
+  files:
+    -  README.md
