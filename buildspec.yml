@@ -6,6 +6,7 @@ phases:
         java: corretto8
     commands:
       - yum update -y
+      - mvn build
   pre_build:
     commands:
   build:
@@ -14,3 +15,4 @@ phases:
 artifacts:
   files:
     -  README.md
+    -  pom.xml
